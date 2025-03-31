@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javascript.js" defer></script>
+    <link rel="stylesheet" href="diseño.css">
+    <title>B-Calculatemor</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="calculator">
+            <div class="input"> 
+                <p id="input"> - __ - </p>
+            </div>
+                <div class="basics">
+                    <button onclick="clean()">CLEAR</button>
+                    <button onclick="deletear()">DELETE</button>
+                </div>
+            <div class="secondBotons">
+            <div class="numbers">
+                <div class="firstrow">
+                    <button id = "num" onclick="numOperate(9)">9</button>
+                    <button id = "num" onclick="numOperate(8)">8</button>
+                    <button id = "num" onclick="numOperate(7)">7</button>
+                </div>
+                <div class="secondrow">
+                    <button id = "num" onclick="numOperate(6)">6</button>
+                    <button id = "num" onclick="numOperate(5)">5</button>
+                    <button id = "num" onclick="numOperate(4)">4</button>
+                </div>
+                <div class="thirdrow">
+                    <button id = "num" onclick="numOperate(3)">3</button>
+                    <button id = "num" onclick="numOperate(2)">2</button>
+                    <button id = "num" onclick="numOperate(1)">1</button>
+                </div>
+                <div class="cerorow">
+                    <button id = "num" class="cero" onclick="numOperate(0)">0</button>
+                </div>
+            </div>
+            <div class="columBotons">
+            <div class="adorno">
+                <button id="izq"  onclick="equation('x')">x</button>
+            <div class="adorno1">
+                <button id="arr"  onclick="equation('+')">+</button>
+                <button id="aba"  onclick="equation('-')">-</button>
+            </div>
+                <button id="der"  onclick="equation('/')">/</button>
+            </div>
+            <div class="botonequal">
+                <button onclick="equal()"> = </button>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
